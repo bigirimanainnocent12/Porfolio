@@ -399,6 +399,30 @@ section {
     color: var(--primary);
 }
 
+.exp-company-link {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: var(--transition);
+}
+
+.exp-company-link:hover .exp-company {
+    color: var(--primary);
+    text-decoration: underline;
+}
+
+.exp-company-link i {
+    font-size: 0.7rem;
+    color: var(--text-muted);
+    transition: var(--transition);
+}
+
+.exp-company-link:hover i {
+    color: var(--primary);
+    transform: translate(2px, -2px);
+}
+
 .exp-company {
     color: #10b981;
     font-weight: 600;
