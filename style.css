@@ -512,27 +512,6 @@ section {
     line-height: 1.6;
 }
 
-/* Methodology */
-.method-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 1.5rem;
-}
-
-.method-item {
-    padding: 2rem;
-    background: rgba(15, 23, 42, 0.5);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-}
-
-.method-number {
-    font-size: 0.8rem;
-    color: var(--primary);
-    font-family: monospace;
-    margin-bottom: 1rem;
-    display: block;
-}
 
 /* Contact */
 .contact-container {
