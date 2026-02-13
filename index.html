@@ -62,18 +62,18 @@
                 <div class="underline"></div>
             </div>
             <div class="skills-grid">
-                <!-- Stack 1 -->
+                <!-- Stack 1: Data Engineering -->
                 <div class="data-card skill-category reveal">
                     <i class="fas fa-terminal"></i>
                     <h3>Data Engineering</h3>
                     <ul>
-                        <li><i class="fab fa-python"></i> Python (Pandas, Numpy)</li>
-                        <li><i class="fas fa-database"></i> SQL Advanced & NoSQL</li>
+                        <li><i class="fab fa-python"></i> Python (Pandas, PySpark, Logging)</li>
+                        <li><i class="fab fa-google"></i> GCP (BigQuery, Storage, Cloud SQL)</li>
+                        <li><i class="fas fa-wind"></i> Cloud Composer & Airflow</li>
                         <li><i class="fas fa-filter"></i> Pipeline ETL & Automation</li>
-                        <li><i class="fas fa-vial"></i> Statistiques Appliquées</li>
                     </ul>
                 </div>
-                <!-- Stack 2 -->
+                <!-- Stack 2: Business Intelligence -->
                 <div class="data-card skill-category reveal delay-1">
                     <i class="fas fa-chart-area"></i>
                     <h3>Business Intelligence</h3>
@@ -84,15 +84,15 @@
                         <li><i class="fas fa-magic"></i> Interactive Reporting</li>
                     </ul>
                 </div>
-                <!-- Stack 3 -->
+                <!-- Stack 3: Data Science -->
                 <div class="data-card skill-category reveal delay-2">
                     <i class="fas fa-brain"></i>
-                    <h3>Advanced Analytics</h3>
+                    <h3>Data Science</h3>
                     <ul>
                         <li><i class="fas fa-robot"></i> Machine Learning (MLOps)</li>
+                        <li><i class="fas fa-chart-bar"></i> Seaborn & Matplotlib</li>
                         <li><i class="fas fa-search"></i> NLP & Sentiment Analysis</li>
-                        <li><i class="fas fa-clock"></i> Time Series Forecasting</li>
-                        <li><i class="fas fa-cloud"></i> Modern Data Stack</li>
+                        <li><i class="fas fa-vial"></i> Statistiques Appliquées</li>
                     </ul>
                 </div>
             </div>
@@ -191,37 +191,24 @@
                 <div class="underline"></div>
             </div>
             <div class="projects-grid">
-                <!-- Project 1 -->
+                <!-- Project: NYC Taxi Data Pipeline -->
                 <div class="project-card reveal">
                     <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
-                            alt="Dashboard Analyste de Ventes">
+                        <img src="assets/nyc_taxi_pipeline.png" alt="NYC Taxi Data Pipeline">
                     </div>
                     <div class="project-info">
-                        <span class="project-tag">Power BI / SQL</span>
-                        <h3>Optimisation des Ventes</h3>
-                        <p>Analyse prédictive des revenus et optimisation de la rentabilité par segment client.</p>
-                    </div>
-                </div>
-                <!-- Project 2 -->
-                <div class="project-card reveal delay-1">
-                    <div class="project-img">
-                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
-                            alt="Analyse Assurance Santé">
-                    </div>
-                    <div class="project-info">
-                        <span class="project-tag">Python / Random Forest</span>
-                        <h3>Prédiction des Frais d'Assurance</h3>
-                        <p>Modélisation prédictive des frais de santé via Random Forest Regressor pour optimiser la
-                            tarification des risques.</p>
-                        <a href="https://github.com/bigirimanainnocent12/RandomForestRegressor" target="_blank"
+                        <span class="project-tag">GCP / BigQuery ML / Airflow</span>
+                        <h3>NYC Taxi Data Pipeline</h3>
+                        <p>Pipeline ELT automatisé (Cloud Composer/GCS) traitant 100M+ de trajets. Modélisation
+                            prédictive via BigQuery ML and monitoring interactif Power BI.</p>
+                        <a href="https://github.com/bigirimanainnocent12/google_cloud_projet" target="_blank"
                             style="color: var(--primary); text-decoration: none; font-size: 0.8rem; margin-top: 10px; display: inline-block;">
                             <i class="fab fa-github"></i> Voir sur GitHub
                         </a>
                     </div>
                 </div>
-                <!-- Project 3 -->
-                <div class="project-card reveal delay-2">
+                <!-- Project 3: Pipeline Météo Automatisé -->
+                <div class="project-card reveal delay-1">
                     <div class="project-img">
                         <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                             alt="Pipeline Data Tech">
@@ -237,8 +224,37 @@
                         </a>
                     </div>
                 </div>
-                <!-- Project 4 -->
+                <!-- Project 1 -->
+                <div class="project-card reveal delay-2">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=800&q=80"
+                            alt="Dashboard Analyste de Ventes">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Power BI / SQL</span>
+                        <h3>Optimisation des Ventes</h3>
+                        <p>Analyse prédictive des revenus et optimisation de la rentabilité par segment client.</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
                 <div class="project-card reveal">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1518186285589-2f7649de83e0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Analyse Assurance Santé">
+                    </div>
+                    <div class="project-info">
+                        <span class="project-tag">Python / Random Forest</span>
+                        <h3>Prédiction des Frais d'Assurance</h3>
+                        <p>Modélisation prédictive des frais de santé via Random Forest Regressor pour optimiser la
+                            tarification des risques.</p>
+                        <a href="https://github.com/bigirimanainnocent12/RandomForestRegressor" target="_blank"
+                            style="color: var(--primary); text-decoration: none; font-size: 0.8rem; margin-top: 10px; display: inline-block;">
+                            <i class="fab fa-github"></i> Voir sur GitHub
+                        </a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="project-card reveal delay-1">
                     <div class="project-img">
                         <img src="https://images.unsplash.com/photo-1516035069371-29a1b244cc32?auto=format&fit=crop&w=800&q=80"
                             alt="Collection de Timbres Philatélie">
@@ -255,7 +271,7 @@
                     </div>
                 </div>
                 <!-- Project 5 -->
-                <div class="project-card reveal delay-1">
+                <div class="project-card reveal delay-2">
                     <div class="project-img">
                         <img src="https://images.unsplash.com/photo-1517433670267-08bbd4be890f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
                             alt="Boulangerie Traditionnelle Brioche">
@@ -281,26 +297,17 @@
         <div class="container">
             <div class="contact-container reveal">
                 <div class="contact-info">
-                    <h2>Initions un <span class="gradient-text">projet</span></h2>
-                    <p>Disponible pour des missions de consulting ou des opportunités analytiques à fort impact.</p>
+                    <h2>Parlons de votre <span class="gradient-text">projet</span></h2>
+                    <p>Vous avez une problématique de données ou un besoin en Business Intelligence ? Je suis prêt à
+                        vous accompagner pour transformer vos données en valeur stratégique.</p>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-github"></i></a>
-                        <a href="#"><i class="fas fa-envelope"></i></a>
+                        <a href="https://www.linkedin.com/in/bigirimana-innocent" target="_blank" title="LinkedIn"><i
+                                class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/bigirimanainnocent12" target="_blank" title="GitHub"><i
+                                class="fab fa-github"></i></a>
+                        <a href="mailto:votre@email.com" title="Email"><i class="fas fa-envelope"></i></a>
                     </div>
                 </div>
-                <form id="contact-form">
-                    <div class="form-group">
-                        <input type="text" placeholder="Identité / Entreprise" required>
-                    </div>
-                    <div class="form-group">
-                        <input type="email" placeholder="Email professionnel" required>
-                    </div>
-                    <div class="form-group">
-                        <textarea placeholder="Décrivez votre besoin analytique..." rows="5" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Lancer la connexion</button>
-                </form>
             </div>
         </div>
     </section>
@@ -308,7 +315,7 @@
     <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Innocent BIGIRIMANA | Data Analyst Portofolio</p>
+            <p>&copy; 2026 Innocent BIGIRIMANA | Data Analyst Portfolio</p>
         </div>
     </footer>
 
