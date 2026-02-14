@@ -114,6 +114,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
+    // 6. Magnetic Button & Glow Interaction
+    const heroBtn = document.querySelector('.hero-btns .btn-primary');
+    if (heroBtn) {
+        heroBtn.addEventListener('mousemove', (e) => {
+            const rect = heroBtn.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+
+            // Update button "shine" position
+            heroBtn.style.setProperty('--x', `${x}px`);
+            heroBtn.style.setProperty('--y', `${y}px`);
+
+            // Subtle magnetic pull
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            const moveX = (x - centerX) * 0.2;
+            const moveY = (y - centerY) * 0.2;
+
+            heroBtn.style.transform = `translate(${moveX}px, ${moveY}px) scale(1.02)`;
+        });
+
+        heroBtn.addEventListener('mouseleave', () => {
+            heroBtn.style.transform = '';
+        });
+    }
+
     // 5. Form Handling (Interactive Feedback)
     const contactForm = document.getElementById('contact-form');
     if (contactForm) {
