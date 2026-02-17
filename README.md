@@ -12,6 +12,18 @@ Je suis **Innocent BIGIRIMANA**, un passionné de la donnée spécialisé dans l
 - **Data Engineering**: Pipelines ETL/ELT industriels, Automatisation des flux.
 - **Machine Learning**: Régression, Classification, BigQuery ML, MLOps.
 
+## 📂 Structure du Projet
+```text
+Portfolio-Innocent/
+├── assets/                 # Ressources multimédias (images des projets, logos)
+├── index.html              # Page principale du portfolio (Structure HTML5)
+├── style.css               # Design UI/UX, animations et responsive design
+├── script.js               # Interactions dynamiques et effets de défilement
+├── download_images.py      # Script Python pour la gestion des assets images
+├── download_logo.py        # Script Python pour la récupération des logos
+└── README.md               # Documentation et présentation du projet
+```
+
 ## 📂 Projets Phares
 
 ### 1. NYC Taxi Data Pipeline (150M+ lignes)
@@ -24,10 +36,30 @@ Je suis **Innocent BIGIRIMANA**, un passionné de la donnée spécialisé dans l
 - **Détails** : Extraction des prévisions à 7 jours via API, orchestration Airflow tous les 6 jours.
 - **Visualisation** : Dashboard Power BI des tendances mondiales.
 
-### 3. Autres Projets
-- **Optimisation des Ventes** : Analyse de rentabilité et calcul de KPIs (DAX).
-- **Prédiction d'Assurance** : Modélisation Random Forest pour l'estimation des frais de santé.
-- **Analyses Statistiques** : Tests d'hypothèses rigoureux (ANOVA, Test-T).
+### 3. Optimisation des Ventes
+- **Objectif** : Analyse de rentabilité et calcul de KPIs (DAX).
+- **Détails** : Création de dashboards interactifs Power BI pour le pilotage commercial.
+
+### 4. Prédiction des Frais d'Assurance (ML & Deployment)
+- **Objectif** : Estimation des coûts de santé via Random Forest.
+- **Variables du jeu de données** :
+
+| Variable | Type | Description |
+| :--- | :--- | :--- |
+| age | Quantitative | Âge de l'assuré |
+| sex | Qualitative binaire | Sexe (Male/Female) |
+| bmi | Quantitative | Indice de Masse Corporelle |
+| children | Quantitative | Nombre d'enfants à charge |
+| smoker | Qualitative binaire | Statut fumeur (Yes/No) |
+| region | Qualitative | Région de résidence (4 modalités) |
+| charges | Quantitative | Frais médicaux (variable cible) |
+
+- **Déploiement** : Modèle final déployé avec une API **FastAPI** sur **Render**.
+- **Stack** : Scikit-Learn, Pandas, FastAPI, Render.
+
+### 5. Analyses Statistiques (ANOVA & Test-T)
+- **Objectif** : Validation d'hypothèses rigoureuse sur des données de production.
+- **Détails** : Tests de normalité, homoscédasticité et interprétation des p-values.
 
 ## 🎨 Design du Portfolio
 Le portfolio est conçu avec une esthétique moderne et premium :
