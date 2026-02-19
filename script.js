@@ -103,10 +103,30 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll();
 
-    // 4. Smooth Scroll
+    // 4. Mobile Menu Toggle
+    const menuToggle = document.getElementById('mobile-menu');
+    const navLinksContainer = document.querySelector('.nav-links');
+
+    if (menuToggle) {
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('is-active');
+            navLinksContainer.classList.toggle('active');
+            document.body.classList.toggle('menu-open');
+        });
+    }
+
+    // 5. Smooth Scroll & Close Mobile Menu
     document.querySelectorAll('.nav-links a').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
+
+            // Close mobile menu if open
+            if (menuToggle) {
+                menuToggle.classList.remove('is-active');
+                navLinksContainer.classList.remove('active');
+                document.body.classList.remove('menu-open');
+            }
+
             const target = document.querySelector(this.getAttribute('href'));
             if (target) {
                 target.scrollIntoView({ behavior: 'smooth', block: 'start' });
